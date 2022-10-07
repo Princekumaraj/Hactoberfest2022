@@ -1,5 +1,7 @@
+// Java program for implementation of Quick Sort
 class QuickSort
 {
+//Function to arrange the pivot and other elements at their respective positions
     int partition(int arr[], int low, int high)
     {
         int pivot = arr[high];
@@ -14,20 +16,24 @@ class QuickSort
                 arr[j] = temp;
             }
         }
+        //swap
         int temp = arr[i+1];
         arr[i+1] = arr[high];
         arr[high] = temp;
         return i+1;
     }
+    //Main function which is implementing Quick Sort
     void sort(int arr[], int low, int high)
     {
         if (low < high)
         {
             int pi = partition(arr, low, high);
+            //Recursions for both right and left side elements
             sort(arr, low, pi-1);
             sort(arr, pi+1, high);
         }
     }
+    //Function to print array
     static void printArray(int arr[])
     {
         int n = arr.length;
@@ -35,6 +41,7 @@ class QuickSort
             System.out.print(arr[i]+" ");
         System.out.println();
     }
+    //Driven Method
     public static void main(String args[])
     {
         int arr[] = {10, 7, 8, 9, 1, 5};
