@@ -3,3 +3,11 @@
 <h1> Happy hactoberfest <h1>
 
 <p> Please add valueable codes to this repo.<p>
+  
+ The goal is to give back and contribute to open-source projects.
+  
+🛑 RULES : 
+YOUR PR/MRS MUST BE WITHIN THE BOUNDS OF HACKTOBERFEST.
+YOUR PR/MRS WIIL BE MERGED WHEN IT WOULD NOT BE SPAMMY.
+YOUR PR/MRS SHOULD BE ACCORDING TO GOOD ISSUES.
+ONCE YOUR PR/MRS PASS ALL THE CHECKS ABOVE, IT WILL BE ACCEPTED FOR HACKTOBERFEST AFTER THE 7-DAY REVIEW PERIOD.
