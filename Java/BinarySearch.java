@@ -10,15 +10,15 @@ public class binarysearch{
     System.out.println(ans);
   }
   static int binarysearch(int arr[] , int target){
-    int start = 0;
-    int end = arr.length - 1;
+    int low = 0;
+    int high= arr.length - 1;
     
-      while(start <= end ){
-         int mid = start + (end - start)/2;
+      while(low <= high ){
+         int mid = low + (high - low)/2;
         if (target < arr[mid] )
-		end = mid - 1;
+	      	high = mid - 1;
 	else if (target > arr[mid] )
-		start = mid +1;
+	      	low = mid +1;
 	else
 	     return mid;
 
